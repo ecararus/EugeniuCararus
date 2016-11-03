@@ -16,19 +16,22 @@
 title: Eugeniu Cararus
 email: cararuseugeniu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Some description Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm specialising in building distributed applications by using different languages and frameworks. 
+  Generally I'm very focused, process oriented technical person. 
+  I like knowing how things work around me and I always look for new exciting opportunities.
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ecararus.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: eugeniu_c
 github_username:  ecararus
+linkedin_username:  ecararus
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
