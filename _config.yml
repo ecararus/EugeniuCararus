@@ -2,7 +2,7 @@
 
 title: Eugeniu Cararus
 locale: en_US
-description: Static blog for software and computer world.
+description: Static blog about couputers and software.
 logo: site-logo.png
 search: true
 url: https://ecararus.github.io/
@@ -50,7 +50,7 @@ owner:
   pinterest: #username
   weibo: #userid
   google:
-    plus: rjenea
+    plus: 110827631098363888935
     analytics: UA-73759976-1
     verify:
     ad-client:

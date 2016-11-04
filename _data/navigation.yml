@@ -3,11 +3,20 @@
 - title: About
   url: /about/
 
-- title: Articles
-  url: /articles/
+- title: Architecture
+  url: /architecture/
 
-- title: Blog
-  url: /blog/
+- title: Languages
+  url: /languages/
+
+- title: DevOps
+  url: /devops/
+
+- title: Testing
+  url: /testing/
+
+- title: Continuous Improvement
+  url: /ci/
 
 - title: Search
   url: /search/
