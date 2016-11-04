@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Languages
-excerpt: "An archive of articles about devops architecture sorted by date."
+title: Testing
+excerpt: "An archive of articles about testing architecture sorted by date."
 search_omit: true
 ---
 
