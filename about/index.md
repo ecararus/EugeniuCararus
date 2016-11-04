@@ -84,6 +84,7 @@ Zookeeper 1.5.1, Solr 4.6.0, PostGreSQL 9.1, Querydsl 3.3.0, EhCache 2.6.8, Hibe
 JAVA 7
 
 ## Senior Software Engineer at Pentalog
+
 ### April 2013 - November 2013 Nord Net
 
 Division of a main telecom operator established in the center of the Lille metropolis, the client is committed
@@ -123,6 +124,7 @@ JAVA, JBoss 4.x GA, Dozer, Maven, MySQL 5.0.x, Unitils, DBUnit, JUnit, JAXB, CXF
 Hibernate 3.x, JPA, Spring 2.5
 
 ## Software Development Engineer at Pentalog
+
 ### April 2011 - April 2013 ELSTER ENERGYICT
 
 Our client, one of the world leaders in the field of energy management, supplies its customers with tools that
@@ -150,7 +152,9 @@ In charge of carrying out tests.
 Java, JUnit, EasyMock, PowerMock, Mockito, Google KML, Oracle 10g, env virtualisation.
 
 ## Senior J2EE Developer at Pentalog
+
 ### September 2010 - March 2011  FRAGRANCES AND FLAVOURS INDUSTRY LEADER
+
 Global leader in the fragrances and flavours industry, the quoted company creates and produces unique and
 innovative fragrance and flavour solutions in the agri-food, perfumery sectors etc.
 
@@ -171,7 +175,9 @@ jQuery, HTML, Spring, Hibernate, JUnit, Tomcat, J2EE, CSS, Apache, JSP / Servlet
 WebSphere, JavaScript
 
 ## J2EE Developer at Pentalog
+
 ### October 2009 - September 2010  STRATOR - ALTADIS GROUP
+
 Strator is a subsidiary of the Altadis group, one of the world leaders in the tobacco industries. Strator offers
 its customers a software solution called Gamme5 providing the automation of the process of sale, collection
 and shop management.
@@ -200,6 +206,7 @@ In charge of carrying out and managing unit tests.
 JSF, Hibernate, PostGreSQL, JBoss, JAVA
 
 ## Software Developer at F-Line Technologies
+
 ### August 2009 - October 2009 
 
 F-Line Technologies develops and supports solutions for banks and financial institutions. It is experienced
@@ -224,6 +231,7 @@ Oracle products such as OracleADF with UI written by using PrimeFaces/RichFaces,
 solution, Oracle10g, WebLogic application server.
 
 ## Software Developer at ICS Mobiteam
+
 ### June 2007 - September 2009 
 
 - MISSION DESCRIPTION:
@@ -237,6 +245,7 @@ Maven, Hibernate, Eclipse, PostgreSQL, JNDI, JDBC, CSS, JSP / Servlets, PLPG/SQL
 XML
 
 ## Software Developer at ICS Dreamcraft
+
 ### January 2009 - May 2009
 
 Dreamcraft is an investment project which was creating to develop a real-time game based on 2'd world war
@@ -249,6 +258,7 @@ Develop an portal where users can play on-line game without having standalone ap
 Java, Spring 3.2, Hibernate 3.x, Axis 1.4, JUnit, Apache Tomcat.
 
 ## Web Developer at Center of the Network and Internet Resources of the Science Academy of Moldova
+
 ### March 2007 - November 2007 
 
 Create Web site for Science Academy of Moldova www.asm.md
@@ -263,6 +273,20 @@ Technology stack: PHP, MySQL, Drupal, ApacheServer, HTML, JavaScript.
   * Romanian (Native or bilingual proficiency)
   * Russian (Native or bilingual proficiency)
   * German (Elementary proficiency)
+  
+
+# Education
+
+- Universitatea Tehnica a Moldovei
+Master's degree, Computer Science French Departament, 2005 - 2009
+Activities and Societies: Linux User Group
+
+- Transport College from Chisinau
+Bachelor's degree, 2002 - 2005
+
+- Theoretical Lyceum "Ginta Latina"
+Primry, Seconary, 1991 - 2002
+
 
 # Skills & Expertise
 
@@ -315,15 +339,3 @@ Technology stack: PHP, MySQL, Drupal, ApacheServer, HTML, JavaScript.
   * Vagrant
   * Mule ESB
   * Web Services
-
-# Education
-
-- Universitatea Tehnica a Moldovei
-Master's degree, Computer Science French Departament, 2005 - 2009
-Activities and Societies: Linux User Group
-
-- Transport College from Chisinau
-Bachelor's degree, 2002 - 2005
-
-- Theoretical Lyceum "Ginta Latina"
-Primry, Seconary, 1991 - 2002
