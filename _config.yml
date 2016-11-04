@@ -51,8 +51,8 @@ owner:
   pinterest: #username
   weibo: #userid
   google:
-    plus: rjenea 
-    analytics:
+    plus: rjenea
+    analytics: UA-73759976-1
     verify:
     ad-client:
     ad-slot:
