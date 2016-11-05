@@ -3,6 +3,7 @@
 Simple static generated site
 tools used:
  - Ruby
+ - [how to](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
  - [jekyll](http://jekyllrb.com)
  - [jekyll-import](https://github.com/jekyll/jekyll-import)
  - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
