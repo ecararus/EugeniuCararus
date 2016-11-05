@@ -2,7 +2,7 @@
 layout: post
 title: Design patterns in images
 excerpt: "Purpose of the article is to describe and remember GOF patterns in a quick way by having a short description and diagram."
-categories: articles
+categories: architecture
 tags: [architecture, design-patterns]
 image:
   feature: so-simple-sample-image-1.jpg
