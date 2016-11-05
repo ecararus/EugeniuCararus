@@ -1,0 +1,55 @@
+---
+layout: post
+title: Autovalue
+excerpt: "Try com.google.auto.value, is it really useful?"
+categories: languages
+tags: [languages, java]
+date: '2016-02-19T01:46:00.003Z'
+image:
+  feature: so-simple-sample-image-5.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  <h1 style="border-bottom-color: rgb(238, 238, 238); border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 2.25em; line-height: 1.2; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; margin-top: 0px !important; padding-bottom: 0.3em;">
+    Autovalue or simple POJO</h1>
+  <div style="box-sizing: border-box;">
+    <h3 style="text-align: left;">
+      Intention:</h3>
+    <div>
+      <span style="color: #333333; font-family: &quot;helvetica neue&quot; , &quot;helvetica&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;freesans&quot; , sans-serif , &quot;apple color emoji&quot; , &quot;segoe ui emoji&quot; , &quot;segoe ui symbol&quot;; line-height: 25.6px;">Try&nbsp;</span><span style="color: #333333; font-family: &quot;helvetica neue&quot; , &quot;helvetica&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;freesans&quot; , sans-serif , &quot;apple color emoji&quot; , &quot;segoe ui emoji&quot; , &quot;segoe ui symbol&quot;;"><span style="line-height: 25.6px;">com.google.auto.value, is it really&nbsp;useful?</span></span><br />
+      <span style="color: #333333; font-family: &quot;helvetica neue&quot; , &quot;helvetica&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;freesans&quot; , sans-serif , &quot;apple color emoji&quot; , &quot;segoe ui emoji&quot; , &quot;segoe ui symbol&quot;;"><span style="line-height: 25.6px;"><br /></span></span></div>
+    <h3 style="text-align: left;">
+      <span style="font-weight: normal;">Description:</span></h3>
+    <div style="line-height: 25.6px;">
+      <span style="color: #333333; font-family: &quot;helvetica neue&quot; , &quot;helvetica&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;freesans&quot; , sans-serif , &quot;apple color emoji&quot; , &quot;segoe ui emoji&quot; , &quot;segoe ui symbol&quot;;"></span></div>
+    <div style="color: #333333; font-family: 'helvetica neue', helvetica, 'segoe ui', arial, freesans, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol'; font-size: 16px; line-height: 25.6px;">
+      <br />
+      I had a discussion about boilerplate code and its impact on the readability/component weight/unit test coverage.</div>
+    <div style="color: #333333; font-family: 'helvetica neue', helvetica, 'segoe ui', arial, freesans, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol'; font-size: 16px; line-height: 25.6px;">
+      <br /></div>
+    <div style="color: #333333; font-family: 'helvetica neue', helvetica, 'segoe ui', arial, freesans, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol'; font-size: 16px; line-height: 25.6px;">
+      Is it really useful? &nbsp;</div>
+  </div>
+  <div style="box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; line-height: 25.6px;">
+    <span style="line-height: 25.6px;">Below is listed a simple example of a bean annotated with AutoValue, which during build phase automatically entire bean + it's builder is generated with equals/hashcode/toString.</span><br />
+    <span style="line-height: 25.6px;"><br /></span></div>
+  <div style="box-sizing: border-box;">
+    <div style="color: #333333; font-family: 'helvetica neue', helvetica, 'segoe ui', arial, freesans, sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol'; font-size: 16px; line-height: 25.6px; text-align: left;">
+      <span style="line-height: 25.6px;"><script src="https://gist.github.com/ecararus/3c82427619114e351dc5.js"></script></span></div>
+    <h3 style="text-align: left;">
+      <span style="font-weight: normal;">Conclusion:</span></h3>
+    <div>
+      <span style="font-weight: normal;"><br /></span></div>
+    <div style="text-align: left;">
+      In case the model is really simple it might be useful, but when it has variation of references/nulable/ or custom validation than I would say it does not bring a lot of value. <br />
+      <br /></div>
+    <h3 style="text-align: left;">
+      <span style="font-weight: normal;">References:</span></h3>
+  </div>
+  Git:&nbsp;<a href="https://github.com/ecararus/autovalue">https://github.com/ecararus/autovalue</a><br />
+  Documentation:&nbsp;<a href="https://github.com/google/auto/tree/master/value">https://github.com/google/auto/tree/master/value</a><br />
+  <br /></div>
