@@ -5,7 +5,7 @@ locale: en_US
 description: Static blog about couputers and software.
 logo: site-logo.png
 search: true
-url: #https://ecararus.github.io/
+url: https://ecararus.github.io/
 
 # Jekyll configuration
 
