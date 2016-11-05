@@ -1,0 +1,71 @@
+---
+layout: post
+title: Saga pattern
+excerpt: "Find a solution for distributed transaction management for system that interacts with multiple sub systems. Cover scenario for failures of environments, some system might be activities while others is failing, which does not satisfy ACID principles. There are mechanisms to handle these situations such as coordinated 2-phase commit (distributed transactions), but in the this solution is not really good when we spoke about distributed and scalable infrastructure."
+categories: architecture
+tags: [architecture, design-patterns]
+date: '2016-02-16T01:46:00.003Z'
+image:
+  feature: so-simple-sample-image-2.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  <br />
+  <h4 style="text-align: left;">
+    Intention:</h4>
+  Find a solution for distributed transaction management for system that interacts with multiple sub systems. Cover scenario for failures of environments, some system might be activities while others is failing, which does not satisfy ACID principles. There are mechanisms to handle these situations such as coordinated 2-phase commit (distributed transactions), but in the this solution is not really good when we spoke about distributed and scalable infrastructure.<br />
+  <br />
+  "Sagas come out of the realization that particularly long-lived transactions (originally even just inside databases), but also far distributed transactions across location and/or trust boundaries can't eaily be handled using the classic ACID model with 2-Phase commit and holding locks for the duration of the work. Instead, a Saga splits work into individual transactions whose effects can be, somehow, reversed after work has been performed and committed."[1]<br />
+  <br />
+  <div style="text-align: center;">
+    <a href="http://1.bp.blogspot.com/-LMl0NdKUU2c/VxBFJZlx7FI/AAAAAAAAVB4/AKhGHIbEOg4bt8lwDfgP63SRpxNP49IuACK4B/s1600/image1.png" imageanchor="1"><img border="0" height="180" src="https://1.bp.blogspot.com/-LMl0NdKUU2c/VxBFJZlx7FI/AAAAAAAAVB4/AKhGHIbEOg4bt8lwDfgP63SRpxNP49IuACK4B/s320/image1.png" width="320" /></a></div>
+  <h4 style="text-align: left;">
+    <hr />
+  </h4>
+  <h4 style="text-align: left;">
+    Description:</h4>
+  The term saga, in relation to distributed systems, was originally defined in the paper "Sagas" by Hector Garcia-Molina and Kenneth Salem. This paper proposes a mechanism that it calls a saga as an alternative to using a distributed transaction for managing a long-running business process. The paper recognizes that business processes are often comprised of multiple steps, each of which involves a transaction, and that overall consistency can be achieved by grouping these individual transactions into a distributed transaction. However, in long-running business processes, using distributed transactions can impact on the performance and concurrency of the system because of the locks that must be held for the duration of the distributed transaction. Saga as well is a failure management pattern.<br />
+  <br />
+  <div style="text-align: center;">
+    <a href="http://3.bp.blogspot.com/-lG2gmQ8bwKk/VxBFbCAkmqI/AAAAAAAAVCA/hpmfHvajt9wpk3ViyXYaldOxwIBIEizEgCK4B/s1600/image6.png" imageanchor="1"><img border="0" height="320" src="https://3.bp.blogspot.com/-lG2gmQ8bwKk/VxBFbCAkmqI/AAAAAAAAVCA/hpmfHvajt9wpk3ViyXYaldOxwIBIEizEgCK4B/s320/image6.png" width="320" /></a></div>
+  <br />
+  A Saga is a set of rules for routing a job to multiple collaborating parties, and allowing these parties to backtrack and/or take corrective action in the case of failure.<br />
+  As per above sequence is shown Fraud, Billing, Warehouse represented different system than saga is a distribution of multiple workflows across multiple systems, each providing a strategy of compensating actions in the event that any of the steps in the workflow fails, in another words as result of initialization of call we will get an rollback strategy.<br />
+  <h4 style="text-align: left;">
+    <hr />
+    <br />Place of saga in SOA pattern:</h4>
+  <div style="text-align: center;">
+    <a href="http://1.bp.blogspot.com/-v7wiZU_VxHQ/VxBHh7jLXqI/AAAAAAAAVCQ/qBMrVpLVnZ8eRhwdjCDNVQ4ryLc0S6VNwCK4B/s1600/patternmap.jpg" imageanchor="1"><img border="0" height="460" src="https://1.bp.blogspot.com/-v7wiZU_VxHQ/VxBHh7jLXqI/AAAAAAAAVCQ/qBMrVpLVnZ8eRhwdjCDNVQ4ryLc0S6VNwCK4B/s640/patternmap.jpg" width="640" /></a></div>
+  <h4 style="text-align: left;">
+    <hr />
+  </h4>
+  <h4 style="text-align: left;">
+    Example of Implementation:</h4>
+  <div>
+    <div>
+      A great example of saga has been implemented by Clemens Vasters and posted on his blog. Have a look here:&nbsp;http://vasters.com/clemensv/2012/09/01/Sagas.aspx</div>
+  </div>
+  <div>
+    <hr />
+  </div>
+  <h4 style="text-align: left;">
+    Useful resources:&nbsp;</h4>
+  <ol style="text-align: left;">
+    <li><a href="http://vasters.com/clemensv/2012/09/01/Sagas.aspx">http://vasters.com/clemensv/2012/09/01/Sagas.aspx</a></li>
+    <li><a href="http://arnon.me/2013/01/saga-pattern-architecture-design/">http://arnon.me/2013/01/saga-pattern-architecture-design/</a></li>
+    <li><a href="http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/">http://kellabyte.com/2012/05/30/clarifying-the-saga-pattern/</a></li>
+    <li><a href="https://msdn.microsoft.com/en-us/library/jj591569.aspx">https://msdn.microsoft.com/en-us/library/jj591569.aspx</a></li>
+  </ol>
+  <hr />
+  <br />
+  <h4 style="text-align: left;">
+    Presentation:&nbsp;</h4>
+  Amazing presentation done by <a href="https://caitiem.com/">Caitie McCaffrey</a>&nbsp;at goto conference 2015.<br />
+  <br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/xDuwrtwYHu8" width="500"></iframe></span><br />
+  <br /></div>
+

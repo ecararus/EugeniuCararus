@@ -1,0 +1,130 @@
+---
+layout: post
+title: Apache Spark
+excerpt: "Introduction and description of Apache Spark"
+categories: architecture
+tags: [architecture, design-patterns]
+date: '2016-02-17T01:46:00.003Z'
+image:
+  feature: so-simple-sample-image-3.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
+---
+
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  <h3 style="text-align: left;">
+    <a href="http://1.bp.blogspot.com/-cBYsR2DV8n0/Vwb9yzDxbbI/AAAAAAAAU6E/ZOV4Bp83ldo602gsEhQQ7hds21wgjxEeg/s1600/Spark-logo-192x100px.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://1.bp.blogspot.com/-cBYsR2DV8n0/Vwb9yzDxbbI/AAAAAAAAU6E/ZOV4Bp83ldo602gsEhQQ7hds21wgjxEeg/s400/Spark-logo-192x100px.png" /></a>
+    What is Apache Spark.</h3>
+  <div style="text-align: center;">
+  </div>
+  Apache Spark is an open source cluster computing framework. It is a computational engine&nbsp;that is responsible for scheduling, distributing, and monitoring applications consisting of many computational tasks across many worker machines, or a computing cluster.<br />
+  <br />
+  Spark provides an application programming interface centered on a data structure called the resilient distributed dataset (RDD), a read-only multiset of data items distributed over a cluster of machines, that is maintained in a fault-tolerant way.<br />
+  <br />
+  Spark is better than MapReduce and Hadoop because it is much faster and has as well some benefits like interactive processing and machine learning tool, which allows to have predictive analytics's.<br />
+  <b><br /></b>
+  <b></b><br />
+  <hr />
+  <b>
+  </b><b>Spark structure:</b><br />
+  <br />
+  <div style="text-align: center;">
+    <a href="http://2.bp.blogspot.com/-Uu-VzXCmo0Y/Vwbv84ZSQRI/AAAAAAAAU5w/vTNolxoSi4MwEziskPWdZkiB72jMGxY9g/s1600/Spark.png" imageanchor="1"><img border="0" height="167" src="https://2.bp.blogspot.com/-Uu-VzXCmo0Y/Vwbv84ZSQRI/AAAAAAAAU5w/vTNolxoSi4MwEziskPWdZkiB72jMGxY9g/s320/Spark.png" width="320" /></a></div>
+  <br />
+  <b>Spark Core:</b> &nbsp;contains the basic functionality of Spark, including components for task scheduling, memory management, fault recovery, interacting with storage systems. Spark Core provides many APIs for building and manipulating RDD collections.&nbsp;RDD is a collection of Objects that are immutable and their operations are lazy; fault-tolerance is achieved by keeping track of the "lineage" of each RDD, the sequence of operations produced it, so that it can be reconstructed in the case of data loss.<br />
+  <br />
+  <b>Spark SQL:</b> is a component that introduces a new data abstraction called DataFrames, which provides support for structured and semi-structured data. Spark SQL provides a domain-specific language to manipulate DataFrames. It also provides SQL language support, with command-line interfaces and ODBC/JDBC server.<br />
+  It allows querying data via SQL as well as the Apache Hive variant of SQL—called the Hive Query Language (HQL)—and it supports many sources of data, including Hive tables, Parquet, and JSON.<br />
+  <br />
+  <b>Spark Streaming:</b>&nbsp;&nbsp;is a component that enables processing of live streams of data.&nbsp;Spark Streaming provides an API for manipulating data streams that closely matches the Spark Core’s RDD API.&nbsp;This design enables the same set of application code written for batch analytics to be used in streaming analytics, on a single engine.<br />
+  <div>
+    <br /></div>
+  <div>
+    <b>MLlib Machine Learning Library:&nbsp;</b>is a distributed machine learning framework on top of Spark Core</div>
+  <div>
+    provides multiple types of machine learning algorithms, including classification, regression, clustering, and collaborative filtering, as well as supporting functionality such as model evaluation and data import.&nbsp;</div>
+  <div>
+    It also provides some lower-level ML primitives, including a generic gradient descent optimization algorithm. All of these methods are designed to scale out across a cluster which simplifies large scale machine learning pipelines, including:</div>
+  <div>
+    <br /></div>
+  <div>
+    <ul style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px; line-height: 22.4px; list-style-image: url(&quot;data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A&quot;); margin: 0.3em 0px 0px 1.6em; padding: 0px;">
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Summary_statistics" style="background: none; color: #0b0080; text-decoration: none;" title="Summary statistics">summary statistics</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Correlation_and_dependence" style="background: none; color: #0b0080; text-decoration: none;" title="Correlation and dependence">correlations</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Stratified_sampling" style="background: none; color: #0b0080; text-decoration: none;" title="Stratified sampling">stratified sampling</a>,&nbsp;<a class="mw-redirect" href="https://en.wikipedia.org/wiki/Hypothesis_testing" style="background: none; color: #0b0080; text-decoration: none;" title="Hypothesis testing">hypothesis testing</a>, random data generation<sup class="reference" id="cite_ref-11" style="font-size: 11.2px; line-height: 1; unicode-bidi: isolate; white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Apache_Spark#cite_note-11" style="background: none; color: #0b0080; text-decoration: none;">[10]</a></sup></li>
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Statistical_classification" style="background: none; color: #0b0080; text-decoration: none;" title="Statistical classification">classification</a>&nbsp;and&nbsp;<a href="https://en.wikipedia.org/wiki/Regression_analysis" style="background: none; color: #0b0080; text-decoration: none;" title="Regression analysis">regression</a>:&nbsp;<a class="mw-redirect" href="https://en.wikipedia.org/wiki/Support_vector_machines" style="background: none; color: #0b0080; text-decoration: none;" title="Support vector machines">support vector machines</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Logistic_regression" style="background: none; color: #0b0080; text-decoration: none;" title="Logistic regression">logistic regression</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Linear_regression" style="background: none; color: #0b0080; text-decoration: none;" title="Linear regression">linear regression</a>, decision trees,&nbsp;<a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier" style="background: none; color: #0b0080; text-decoration: none;" title="Naive Bayes classifier">naive Bayes classification</a></li>
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Collaborative_filtering" style="background: none; color: #0b0080; text-decoration: none;" title="Collaborative filtering">collaborative filtering</a>&nbsp;techniques including alternating least squares (ALS)</li>
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Cluster_analysis" style="background: none; color: #0b0080; text-decoration: none;" title="Cluster analysis">cluster analysis methods</a>&nbsp;including&nbsp;<a href="https://en.wikipedia.org/wiki/K-means_clustering" style="background: none; color: #0b0080; text-decoration: none;" title="K-means clustering">k-means</a>, and&nbsp;<a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" style="background: none; color: #0b0080; text-decoration: none;" title="Latent Dirichlet allocation">Latent Dirichlet Allocation</a>&nbsp;(LDA)</li>
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Dimensionality_reduction" style="background: none; color: #0b0080; text-decoration: none;" title="Dimensionality reduction">dimensionality reduction techniques</a>&nbsp;such as&nbsp;<a href="https://en.wikipedia.org/wiki/Singular_value_decomposition" style="background: none; color: #0b0080; text-decoration: none;" title="Singular value decomposition">singular value decomposition</a>&nbsp;(SVD), and&nbsp;<a href="https://en.wikipedia.org/wiki/Principal_component_analysis" style="background: none; color: #0b0080; text-decoration: none;" title="Principal component analysis">principal component analysis</a>&nbsp;(PCA)</li>
+      <li style="margin-bottom: 0.1em;"><a href="https://en.wikipedia.org/wiki/Feature_extraction" style="background: none; color: #0b0080; text-decoration: none;" title="Feature extraction">feature extraction</a>&nbsp;and&nbsp;<a href="https://en.wikipedia.org/wiki/Data_transformation_(statistics)" style="background: none; color: #0b0080; text-decoration: none;" title="Data transformation (statistics)">transformation</a>&nbsp;functions</li>
+      <li style="margin-bottom: 0.1em;"><a class="mw-redirect" href="https://en.wikipedia.org/wiki/Optimization_(mathematics)" style="background: none; color: #0b0080; text-decoration: none;" title="Optimization (mathematics)">optimization</a>&nbsp;algorithms such as&nbsp;<a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent" style="background: none; color: #0b0080; text-decoration: none;" title="Stochastic gradient descent">stochastic gradient descent</a>,&nbsp;<a href="https://en.wikipedia.org/wiki/Limited-memory_BFGS" style="background: none; color: #0b0080; text-decoration: none;" title="Limited-memory BFGS">limited-memory BFGS</a>&nbsp;(L-BFGS)</li>
+    </ul>
+  </div>
+  <div>
+    <br /></div>
+  <div>
+    <b>GraphX:</b> is a library for manipulating graphs and performing graph-parallel computations.&nbsp;</div>
+  It also provides various operators for manipulating graphs e.g. subgraph and mapVertices and a library of common graph algorithms, it also provides an optimized runtime.<br />
+  <br />
+  <hr />
+  <br />
+  <b>RDD</b> - Resilient Distributed Dataset, is an interface to data and provide an contract between data and spark, they can be classified in two main types - Transformations and Actions.<br />
+  <br />
+  <div style="text-align: center;">
+    <a href="http://3.bp.blogspot.com/--C8QiD5RBpU/VwcGsdTol_I/AAAAAAAAU6U/Cc4cUHzhy5I4r-TrTRWiLAZAjNxO44kAg/s1600/BTT.png" imageanchor="1"><img border="0" height="270" src="https://3.bp.blogspot.com/--C8QiD5RBpU/VwcGsdTol_I/AAAAAAAAU6U/Cc4cUHzhy5I4r-TrTRWiLAZAjNxO44kAg/s400/BTT.png" width="400" /></a><br />
+    <div style="text-align: left;">
+      <hr />
+      <br />
+      <b>Persistance</b> - it is not all the time persisted in the disk the most powerful way to store is cache (ram) but it has cons because all the time when on RDD is performed an action or transformation then entire RDD is recreated and recomputed. The lineage concept describe the process how HDFS file input is transformed to a new RDD e.g. HadoopRdd-&gt;FiltedRDD-&gt;MappedRDD-&gt;ShuffledRDD ... .</div>
+    <div style="text-align: left;">
+      <br />
+      <hr />
+      <br />
+      <b>Global variables:</b><br />
+      <br />
+      <ol style="text-align: left;">
+        <li>Accumulator is a tool which enables nodes communicate with each other via driver.</li>
+        <li>Broadcast is a distributed cache across nodes.</li>
+        <li>StatsCounter is a tool which allows to create a statistic based on data in all nodes eg. count sum min...</li>
+        <li>DataFrames is a &nbsp;data structure framework same idea like relational data base.</li>
+      </ol>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <b>Yarn based Architecture</b><br />
+      <div style="text-align: center;">
+        <img class="irc_mi" src="http://0x0fff.com/wp-content/uploads/2015/03/Spark-Architecture-On-YARN.png" height="321" style="margin-top: 74px;" width="400" /><br />
+        <br />
+        <div style="text-align: left;">
+          <hr />
+        </div>
+        <div style="text-align: left;">
+          <b>Tuning&nbsp;</b>&nbsp;can be done for different aspects eg. job tuning(increase memory) &nbsp;or GC, MemoryUsage, Level of parallelism, data structure tuning, more details about tuning are available on spark docs page:&nbsp;<a href="http://spark.apache.org/docs/latest/tuning.html">http://spark.apache.org/docs/latest/tuning.html</a></div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/rvDpBTV89AM" width="500"></iframe></span><br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><br /></span>
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><hr />
+</span><br />
+  <br />
+  Intro to Spark Streaming | NewCircle Training<br />
+  <br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><span style="font-family: Roboto, Arial, Helvetica, sans-serif; line-height: 14.3px;"><iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/2STfulBcorA" width="500"></iframe></span></span><br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><br /></span>
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"></span><br />
+  <hr />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;">
+</span><br />
+  <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><br /></span>
+  <b>Application in real life.</b><br />
+  <div>
+    <b><br /></b></div>
+  <div>
+    <span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/Z6M26iqtlDY" width="500"></iframe></span><b><br /></b><span style="background-color: rgba(28 , 28 , 28 , 0.8); color: #bbbbbb; font-family: &quot;roboto&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 11px; line-height: 14.3px;"><br /></span>
+  </div>
+</div>
