@@ -31,7 +31,7 @@ kramdown:
 mathjax: true
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
 # Site owner
 owner:
@@ -40,15 +40,9 @@ owner:
   email: cararuseugeniu@gmail.com
   disqus-shortname:
   twitter: eugeniu_c
-  facebook: #username
   github: ecararus
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: cararuseugeniu
-  instagram: #username
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
   google:
     plus: 110827631098363888935
     analytics: UA-73759976-1
