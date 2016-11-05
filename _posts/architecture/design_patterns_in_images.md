@@ -1,0 +1,269 @@
+---
+layout: post
+title: Design patterns in images
+excerpt: "Purpose of the article is to describe and remember GOF patterns in a quick way by having a short description and diagram."
+categories: articles
+tags: [architecture, design-patterns]
+image:
+  feature: so-simple-sample-image-1.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
+---
+
+# Design patterns in images
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h3 style="text-align: left;">
+<b>Intention:</b></h3>
+Purpose of the article is to describe and remember GOF patterns in a quick way by having a short description and diagram.<br />
+<br />
+This page do not provide entire description and selection principles or use cases for each patern, for more details please refer to the following books:<br />
+<br />
+<ol style="text-align: left;">
+<li><a href="http://www.amazon.co.uk/Head-First-Design-Patterns-Freeman/dp/0596007124/ref=sr_1_2?ie=UTF8&amp;qid=1455466189&amp;sr=8-2&amp;keywords=Design+patterns">Head First Design Patterns</a>&nbsp; by Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra.</li>
+<li><a href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8">Design Patterns: Elements of Reusable Object-Oriented Software</a>&nbsp;by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, Grady Booch.</li>
+</ol>
+<br />
+<h3 style="text-align: left;">
+<b>Description:</b></h3>
+Christopher Alexander says:<br />
+<blockquote class="tr_bq">
+"Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" [1]</blockquote>
+<br />
+Pasterns are split in 3 main groups:<br />
+<br />
+<table border="0" cellspacing="0"><colgroup width="85"></colgroup><colgroup width="183"></colgroup><colgroup width="934"></colgroup><tbody>
+<tr><td align="left" bgcolor="#FFFFFF" height="17" style="border: 1px solid rgb(0, 0, 0);"><span style="color: black; font-family: &quot;liberation&quot; serif;">Group</span></td><td align="left" bgcolor="#FFFFFF" style="border: 1px solid rgb(0, 0, 0);"><span style="color: black; font-family: &quot;liberation&quot; serif;">Pattern</span></td><td align="left" bgcolor="#FFFFFF" style="border: 1px solid rgb(0, 0, 0);"><span style="color: black; font-family: &quot;liberation&quot; serif;">Description</span></td></tr>
+<tr><td align="center" height="119" rowspan="7" style="border: 1px solid rgb(0, 0, 0);" valign="middle"><span style="font-family: &quot;liberation&quot; serif;">Structural</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/adapter">Adapter</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Allows the interface of an existing class to be used from another interface.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/bridge">Bridge</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Allows decoupling abstraction from implementation so that the two can vary independently.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/composite">Composite</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Responsible to compose objects structure into tree and enable to treat them in the same way as a single object.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/decorator">Decorator</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Allows behaviour to be added to an individual object without affecting the behaviour of other objects from the same class.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/facade">Facade</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Provides a simplified interface to a larger body of code or subsystem.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/flyweight">Flyweight</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Allows to minimize memory used by sharing as much data as possible with other similar objects storage costs of objects.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;"><a href="https://github.com/ecararus/proxy">Proxy</a></span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">A wrapper or agent object that is being called by the client to access the real serving object behind the scenes.</span></td></tr>
+<tr><td align="center" height="85" rowspan="5" style="border: 1px solid rgb(0, 0, 0);" valign="middle"><span style="font-family: &quot;liberation&quot; serif;">Creational</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Abstract Factory</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Provides a way to encapsulate a group of individual families without specifying their concrete classes.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Builder</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Create composite object and describes the way how the object gets created.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Factory Method</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Creating objects without having to specify the exact class of the object that will be created.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Prototype</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Describes type of objects to be created which is determined by a prototypical instance.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Singleton</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Restricted creation of instances and promote sole instance per system.</span></td></tr>
+<tr><td align="center" height="188" rowspan="11" style="border: 1px solid rgb(0, 0, 0);" valign="middle"><span style="font-family: &quot;liberation&quot; serif;">Behavioral</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Chain of Responsibility</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Each processing object contains algorithms that defines the types of command objects that it handles.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Command</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">An object is used to encapsulate all information needed to perform an action or trigger an event at a later time.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Interpreter</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Specifies how to evaluate grammar and interpretation of a language.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Iterator</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Used to describe the way how to traverse a container and access the container of the elements.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Mediator</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Defines an object that encapsulates how and which objects interact with each other.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Memento</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Provides the ability to restore an object to its previous state.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Observer</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Subject maintains a list of its dependencies, and notifies them automatically of any state changes.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">State</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Encapsulate different behaviour for the same object based on its internal state.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Strategy</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Enables an algorithm's behaviour to be selected at a runtime.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Template Method</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Defines the program skeleton of an algorithm in a method.</span></td></tr>
+<tr><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Visitor</span></td><td align="left" style="border: 1px solid rgb(0, 0, 0);"><span style="font-family: &quot;liberation&quot; serif;">Allows separate an algorithm from an object structure on which it operates.</span></td></tr>
+</tbody></table>
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+<br /></h4>
+<h4 style="text-align: left;">
+<br /></h4>
+<h4 style="text-align: left;">
+Structural Patterns:</h4>
+Structural patterns is responsible for composition of objects might be named as well entities builder, those pasterns is dealing with data structures.<br />
+<div style="text-align: left;">
+</div>
+<b></b><br />
+<div>
+<br /></div>
+<hr />
+<b>
+Adapter</b><br />
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/-PtXT0fO22_I/VsEkeCb2KII/AAAAAAAATFg/G5l82mfmltQ/s1600/Adapter.gif" imageanchor="1"><img border="0" height="186" src="https://2.bp.blogspot.com/-PtXT0fO22_I/VsEkeCb2KII/AAAAAAAATFg/G5l82mfmltQ/s320/Adapter.gif" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Adapter pattern available on github:&nbsp;<a href="https://github.com/ecararus/adapter">https://github.com/ecararus/adapter</a></div>
+</div>
+<hr />
+<b>Bridge</b><br />
+<div style="text-align: center;">
+<b><a href="http://4.bp.blogspot.com/-kvsZAdRMJuk/VsEk97tNNtI/AAAAAAAATFo/strONOGBK1I/s1600/Bridge.gif" imageanchor="1"><img border="0" height="131" src="https://4.bp.blogspot.com/-kvsZAdRMJuk/VsEk97tNNtI/AAAAAAAATFo/strONOGBK1I/s320/Bridge.gif" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Bridge pattern available on github:&nbsp;<a href="https://github.com/ecararus/bridge">https://github.com/ecararus/bridge</a></div>
+</div>
+<hr />
+<div>
+<b>Composite</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-p6Rc90O1K5g/VsElJn9DEYI/AAAAAAAATF0/wMkev9PGBTo/s1600/Composite.gif" imageanchor="1"><img border="0" height="232" src="https://1.bp.blogspot.com/-p6Rc90O1K5g/VsElJn9DEYI/AAAAAAAATF0/wMkev9PGBTo/s320/Composite.gif" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Composite pattern available on github:&nbsp;<a href="https://github.com/ecararus/composite">https://github.com/ecararus/composite</a></div>
+</div>
+</div>
+<hr />
+<div>
+<b>Decorator</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-ecQPLb1IjYc/VsElq4PmTtI/AAAAAAAATGA/xnK5XYTYh5g/s1600/Decorator.gif" imageanchor="1"><img border="0" height="264" src="https://1.bp.blogspot.com/-ecQPLb1IjYc/VsElq4PmTtI/AAAAAAAATGA/xnK5XYTYh5g/s320/Decorator.gif" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Decorator pattern available on github:&nbsp;<a href="https://github.com/ecararus/decorator">https://github.com/ecararus/decorator</a></div>
+</div>
+</div>
+<hr />
+<div>
+<b>Facade</b><br />
+<div style="text-align: center;">
+<b><a href="http://3.bp.blogspot.com/-JaB__qoFnLQ/VsEmgCrzXQI/AAAAAAAATGI/yHX0IC9jI-M/s1600/Facade.png" imageanchor="1"><img border="0" height="204" src="https://3.bp.blogspot.com/-JaB__qoFnLQ/VsEmgCrzXQI/AAAAAAAATGI/yHX0IC9jI-M/s320/Facade.png" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Facade pattern available on github:&nbsp;<a href="https://github.com/ecararus/facade">https://github.com/ecararus/facade</a></div>
+</div>
+</div>
+<hr />
+<div>
+<b>Flyweight</b><br />
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/-QTtK2R289HY/VsEmzFNmWNI/AAAAAAAATGQ/PNIkouiv430/s1600/Flyweight.gif" imageanchor="1"><img border="0" height="198" src="https://2.bp.blogspot.com/-QTtK2R289HY/VsEmzFNmWNI/AAAAAAAATGQ/PNIkouiv430/s320/Flyweight.gif" width="320" /></a></b><br />
+<div style="text-align: left;">
+Example of Flyweight pattern available on github:&nbsp;<a href="https://github.com/ecararus/flyweight">https://github.com/ecararus/flyweight</a></div>
+</div>
+</div>
+<hr />
+<div>
+<b>Proxy</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://4.bp.blogspot.com/-lDCZkITmzxg/VsEnGWe_vnI/AAAAAAAATGc/FtgfkWi1OC0/s1600/Proxy.gif" imageanchor="1"><img border="0" height="199" src="https://4.bp.blogspot.com/-lDCZkITmzxg/VsEnGWe_vnI/AAAAAAAATGc/FtgfkWi1OC0/s320/Proxy.gif" width="320" /></a></b></div>
+Example of Proxy pattern available on github:&nbsp;<a href="https://github.com/ecararus/proxy">https://github.com/ecararus/proxy</a><br />
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+<br /></h4>
+<h4 style="text-align: left;">
+<br /></h4>
+<h4 style="text-align: left;">
+Creational patterns:</h4>
+Creational patterns responsible for ways of object creation.<br />
+<div style="text-align: left;">
+</div>
+<b></b><br />
+<div>
+<b><b><br /></b></b></div>
+<hr />
+<b>
+Abstract Factory</b><br />
+<div>
+<div style="text-align: left;">
+<ul style="display: inline !important;">
+<li style="display: inline !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://4.bp.blogspot.com/-TMjXHQ8Qxw0/VsEg_wz5MXI/AAAAAAAATEc/_tNNwnUvyzo/s1600/Abstract%2BFactory.jpg" imageanchor="1" style="text-align: center;"><img border="0" height="400" src="https://4.bp.blogspot.com/-TMjXHQ8Qxw0/VsEg_wz5MXI/AAAAAAAATEc/_tNNwnUvyzo/s400/Abstract%2BFactory.jpg" width="370" /></a></li>
+</ul>
+</div>
+<hr />
+<div>
+<b>Builder</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/-uM4hXC5HmQE/VsEh6qRo5HI/AAAAAAAATEo/sW66fjmIJcQ/s1600/Builder.png" imageanchor="1"><img border="0" height="191" src="https://2.bp.blogspot.com/-uM4hXC5HmQE/VsEh6qRo5HI/AAAAAAAATEo/sW66fjmIJcQ/s320/Builder.png" width="320" /></a></b></div>
+<hr />
+<b>Factory Method</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-XjuYpkZmGcQ/VsEicXw0lxI/AAAAAAAATEw/IRPRDFykCeI/s1600/FactoryMethod.png" imageanchor="1"><img border="0" height="147" src="https://1.bp.blogspot.com/-XjuYpkZmGcQ/VsEicXw0lxI/AAAAAAAATEw/IRPRDFykCeI/s320/FactoryMethod.png" width="320" /></a></b></div>
+<hr />
+<b>Prototype</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-jxkmFUjk3jo/VsEi2Y0w_iI/AAAAAAAATFE/VaXm61ZiVUs/s1600/Prototype.gif" imageanchor="1"><img border="0" height="184" src="https://1.bp.blogspot.com/-jxkmFUjk3jo/VsEi2Y0w_iI/AAAAAAAATFE/VaXm61ZiVUs/s320/Prototype.gif" width="320" /></a></b></div>
+<hr />
+<b>Singleton</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://4.bp.blogspot.com/-QcCmZ7qznTs/VsEjY1ih04I/AAAAAAAATFQ/r9k8VM3vwtQ/s1600/Singleton.gif" imageanchor="1"><img border="0" height="124" src="https://4.bp.blogspot.com/-QcCmZ7qznTs/VsEjY1ih04I/AAAAAAAATFQ/r9k8VM3vwtQ/s200/Singleton.gif" width="200" /></a></b></div>
+<br />
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+</h4>
+<h4 style="text-align: left;">
+Behavioral Patterns:</h4>
+Behavioral patterns responsible for ways in which classes or objects interact and separation of concerns.<br />
+<br />
+<div style="text-align: left;">
+</div>
+<hr />
+<b>Chain of Responsibility</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-3X2tvI4tZUo/VsEotGZpUuI/AAAAAAAATGs/v8HKcfIuvv0/s1600/Chain_of_Responsibility.gif" imageanchor="1"><img border="0" height="121" src="https://1.bp.blogspot.com/-3X2tvI4tZUo/VsEotGZpUuI/AAAAAAAATGs/v8HKcfIuvv0/s320/Chain_of_Responsibility.gif" width="320" /></a></b></div>
+</div>
+<div>
+<hr />
+<b>Command</b><br />
+<div style="text-align: center;">
+<b><a href="http://4.bp.blogspot.com/-cQ-2Tbcyy-k/VsEo9uhqrBI/AAAAAAAATG0/7SEkRkCxiqE/s1600/Command.gif" imageanchor="1"><img border="0" height="209" src="https://4.bp.blogspot.com/-cQ-2Tbcyy-k/VsEo9uhqrBI/AAAAAAAATG0/7SEkRkCxiqE/s320/Command.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Interpreter</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-58WzwTy5PcM/VsEpJmOLFuI/AAAAAAAATG8/y1KZl2CgSP8/s1600/Interpreter.gif" imageanchor="1"><img border="0" height="210" src="https://1.bp.blogspot.com/-58WzwTy5PcM/VsEpJmOLFuI/AAAAAAAATG8/y1KZl2CgSP8/s320/Interpreter.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Iterator</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-qvuw930Cr-g/VsEpdxC6ExI/AAAAAAAATHI/pzcT79-H49A/s1600/Iterator.gif" imageanchor="1"><img border="0" height="196" src="https://1.bp.blogspot.com/-qvuw930Cr-g/VsEpdxC6ExI/AAAAAAAATHI/pzcT79-H49A/s400/Iterator.gif" width="400" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Mediator</b><br />
+<div style="text-align: center;">
+<b><a href="http://3.bp.blogspot.com/-e846twdsg2M/VsEpp2Z4CgI/AAAAAAAATHQ/tTRPywKaJBw/s1600/Mediator.gif" imageanchor="1"><img border="0" height="165" src="https://3.bp.blogspot.com/-e846twdsg2M/VsEpp2Z4CgI/AAAAAAAATHQ/tTRPywKaJBw/s320/Mediator.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Memento</b><br />
+<div style="text-align: center;">
+<b><a href="http://3.bp.blogspot.com/--L2dolD-TwM/VsEp6laJEFI/AAAAAAAATHc/N4w6IgCjzlA/s1600/Memento.gif" imageanchor="1"><img border="0" height="141" src="https://3.bp.blogspot.com/--L2dolD-TwM/VsEp6laJEFI/AAAAAAAATHc/N4w6IgCjzlA/s400/Memento.gif" width="400" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Observer</b><br />
+<div style="text-align: center;">
+<b><a href="http://4.bp.blogspot.com/-Emlb0OvSFoc/VsEqMB4wyTI/AAAAAAAATHo/jZBh4XEdi-8/s1600/Observer.png" imageanchor="1"><img border="0" height="132" src="https://4.bp.blogspot.com/-Emlb0OvSFoc/VsEqMB4wyTI/AAAAAAAATHo/jZBh4XEdi-8/s320/Observer.png" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>State</b><br />
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/-EkF31A6aAXA/VsEqUJWKYOI/AAAAAAAATHw/2UAbLOriF8c/s1600/State.gif" imageanchor="1"><img border="0" height="137" src="https://2.bp.blogspot.com/-EkF31A6aAXA/VsEqUJWKYOI/AAAAAAAATHw/2UAbLOriF8c/s320/State.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Strategy</b><br />
+<div style="text-align: center;">
+<b><a href="http://1.bp.blogspot.com/-2GVGui-vCaI/VsEqcdWckWI/AAAAAAAATH8/AIGfB0wBDpg/s1600/Strategy.gif" imageanchor="1"><img border="0" height="120" src="https://1.bp.blogspot.com/-2GVGui-vCaI/VsEqcdWckWI/AAAAAAAATH8/AIGfB0wBDpg/s320/Strategy.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Template Method</b><br />
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/-gEeCVRxfABo/VsEqvzlL0bI/AAAAAAAATII/7OBl4yVyJDU/s1600/Template_Method.gif" imageanchor="1"><img border="0" height="207" src="https://2.bp.blogspot.com/-gEeCVRxfABo/VsEqvzlL0bI/AAAAAAAATII/7OBl4yVyJDU/s320/Template_Method.gif" width="320" /></a></b></div>
+</div>
+<hr />
+<div>
+<b>Visitor</b></div>
+<div>
+<div style="text-align: center;">
+<b><a href="http://2.bp.blogspot.com/--95LXtuZW7o/VsErSM--pcI/AAAAAAAATIU/bJb1dUXBpcA/s1600/Visitor.gif" imageanchor="1"><img border="0" height="320" src="https://2.bp.blogspot.com/--95LXtuZW7o/VsErSM--pcI/AAAAAAAATIU/bJb1dUXBpcA/s320/Visitor.gif" width="280" /></a></b></div>
+<ol style="text-align: left;">
+</ol>
+<br />
+<b></b><b><br /></b>
+<b>Conclusion:</b><br />
+The scope of design patterns is to provide an optimal designed solution for a specific range of problem, as well pattens should serves as referral for every software developer and help in communication with others.<br />
+<br />
+[1]&nbsp;<a href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8">Design Patterns: Elements of Reusable Object-Oriented Software</a>&nbsp;by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, Grady Booch - p12.</div>
+</div>
+</div>
+</div>
