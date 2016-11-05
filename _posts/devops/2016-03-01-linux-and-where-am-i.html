@@ -1,0 +1,339 @@
+---
+layout: post
+title: Linux and where am I
+excerpt: "The purpose of this page is to present the history of OS and roots of all modern systems. Description of file system architecture and overview of some useful tools"
+categories: devops
+tags: [devops, linux, os]
+date: '2016-03-01T01:46:00.003Z'
+image:
+  feature: so-simple-sample-image-1.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  <b>Intention:</b><br />
+  <br />
+  The purpose of this page is to present the history of OS and roots of all modern systems.<br />
+  <br />
+  <b>History:</b><br />
+  <b><br /></b>
+  The first atemption is starting in 1991: "<span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">The&nbsp;</span><b style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">history of Linux</b><span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">&nbsp;began in 1991 with the commencement of a personal project by&nbsp;</span><a href="https://en.wikipedia.org/wiki/Finland" style="background: none rgb(255, 255, 255); color: #0b0080; font-family: sans-serif; font-size: 14px; text-decoration: none;" title="Finland">Finnish</a><span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">&nbsp;student&nbsp;</span><a href="https://en.wikipedia.org/wiki/Linus_Torvalds" style="background: none rgb(255, 255, 255); color: #0b0080; font-family: sans-serif; font-size: 14px; text-decoration: none;" title="Linus Torvalds">Linus Torvalds</a><span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">&nbsp;to create a new free operating system kernel. Since then, the resulting&nbsp;</span><a href="https://en.wikipedia.org/wiki/Linux_kernel" style="background: none rgb(255, 255, 255); color: #0b0080; font-family: sans-serif; font-size: 14px; text-decoration: none;" title="Linux kernel">Linux kernel</a><span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">&nbsp;has been marked by constant growth throughout its history. Since the initial release of its&nbsp;</span><a href="https://en.wikipedia.org/wiki/Source_code" style="background: none rgb(255, 255, 255); color: #0b0080; font-family: sans-serif; font-size: 14px; text-decoration: none;" title="Source code">source code</a><span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">&nbsp;in 1991" [1]</span><br />
+  <span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;"><br /></span>
+  <span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;">Personaly i started to use linux in second year of uni around 2006 and since then i never ever found &nbsp;better solution for home/profesioanl usages.&nbsp;</span><br />
+  <span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;"><br /></span>
+  <br />
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="http://1.bp.blogspot.com/-FqAQ71-ACSw/WBYX0ifyeCI/AAAAAAAAYC8/NumLeNqiA0wRTJYMHXTeyIS82hDdI_kHgCK4B/s1600/Linux_Distribution_Timeline.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Linux roots" border="0" src="https://1.bp.blogspot.com/-FqAQ71-ACSw/WBYX0ifyeCI/AAAAAAAAYC8/NumLeNqiA0wRTJYMHXTeyIS82hDdI_kHgCK4B/s1600/Linux_Distribution_Timeline.jpg" title="Linux roots" /></a></div>
+  <div class="separator" style="clear: both; text-align: center;">
+    Linux family tree [1]&nbsp;</div>
+  <span style="background-color: white; color: #252525; font-family: sans-serif; font-size: 14px;"><br /></span>
+  &nbsp; &nbsp;The success of Linux versus other operation systems is mainaly because of the decision to make it open for everyone while other company decided to keep it proprietary&nbsp;and hidden, this decision was the crucial in later success of Linux.&nbsp;&nbsp;It can also be considered monolithic because it joint all of the basic services into the kernel. This differs from a microkernel architecture where the kernel provides basic services such as communication, I/O, and memory and process management, and more specific services are plugged in to the microkernel layer. That has been one of the main point of criticism and debates between Torvalds and Tanenbaum&nbsp;<a class="external text" href="http://groups.google.com/group/comp.os.minix/browse_thread/thread/c25870d7a41696d2/f447530d082cd95d?tvc=2" rel="nofollow" style="color: #663366; font-family: sans-serif; font-size: 12.6px; padding-right: 13px; text-decoration: none;">"LINUX is obsolete"</a>.<br />
+  <br />
+  <b>Architecture:&nbsp;</b><br />
+  <div style="text-align: center;">
+    <b><a href="http://3.bp.blogspot.com/-JZ9_qgnrIkM/WBZASa9R1_I/AAAAAAAAYEE/yiuz4jUxBtgvFHGpLTs-wF-H19SdaDh8wCK4B/s1600/the-linux-networking-architecture-4-638.jpg" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-JZ9_qgnrIkM/WBZASa9R1_I/AAAAAAAAYEE/yiuz4jUxBtgvFHGpLTs-wF-H19SdaDh8wCK4B/s1600/the-linux-networking-architecture-4-638.jpg" /></a></b></div>
+  <br />
+  The architecure of Linux operating is splited in 2 main levels. User space represents ther spcase where the user applications are executed. And kernel space where, the Linux kernel exists.<br />
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="http://1.bp.blogspot.com/-fjFNCjhXSlY/WBYpBT27DPI/AAAAAAAAYDM/5xEkjuZPet4kMM1yODKcjw5nV8zpIP34ACK4B/s1600/introduction-to-linux-kernel-by-quontra-solutions-6-638.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="300" src="https://1.bp.blogspot.com/-fjFNCjhXSlY/WBYpBT27DPI/AAAAAAAAYDM/5xEkjuZPet4kMM1yODKcjw5nV8zpIP34ACK4B/s400/introduction-to-linux-kernel-by-quontra-solutions-6-638.jpg" width="400" /></a></div>
+  <div class="separator" style="clear: both; text-align: center;">
+    Linux architecture [2]</div>
+  <br />
+  Also in the user space is located the GNU C Library (glibc/libc). This provides the system call interface that connects to the kernel and provides the mechanism to transition between the user-space application and the kernel. This is important because the kernel and user application occupy different protected address spaces. And while each user-space process occupies its own virtual address space, the kernel occupies a single address space.[3]<br />
+  <br />
+  The Linux kernel can be further divided into three gross levels. At the top is the system call interface, which implements the basic functions such as read and write. Below the system call interface is the kernel code, which can be more accurately defined as the architecture-independent kernel code. This code is common to all of the processor architectures supported by Linux. Below this is the architecture-dependent code, which forms what is more commonly called a BSP (Board Support Package). This code serves as the processor and platform-specific code for the given architecture.<br />
+  <br />
+  <b>System Call Interface</b><br />
+  The SCI is a thin layer that provides the means to perform function calls from user space into the kernel. The SCI is actually an interesting function-call multiplexing and demultiplexing service. The implementation is located in ./linux/kernel, as well as architecture-dependent portions in ./linux/arch.<br />
+  <br />
+  <b>Process management</b><br />
+  Process management is focused on the execution of processes. In the kernel, these are called threads and represent an individual virtualization of the processor (thread code, data, stack, and CPU registers).<br />
+  The kernel provides an API through the SCI to create a new process (fork, exec, or Portable Operating System Interface [POSIX] functions), stop a process (kill, exit), and communicate and synchronize between them (signal, or POSIX mechanisms).<br />
+  Also in process management is the need to share the CPU between the active threads. The kernel implements a novel scheduling algorithm that operates in constant time, regardless of the number of threads vying for the CPU. This is called the O(1) scheduler, denoting that the same amount of time is taken to schedule one thread as it is to schedule many. The O(1) scheduler also supports multiple processors (called Symmetric MultiProcessing, or SMP). Process management sources is located in ./linux/kernel and architecture-dependent sources in ./linux/arch).<br />
+  <br />
+  <b>Memory management</b><br />
+  Another important resource that's managed by the kernel is memory. For efficiency, given the way that the hardware manages virtual memory, memory is managed in what are called pages (4KB in size for most architectures). Linux provides abstractions over 4KB buffers, such as the slab allocator. This memory management scheme uses 4KB buffers as its base, but then allocates structures from within, keeping track of which pages are full, partially used, and empty. This allows the scheme to dynamically grow and shrink based on the needs of the greater system.<br />
+  <br />
+  Supporting multiple users of memory, there are times when the available memory can be exhausted. For this reason, pages can be moved out of memory and onto the disk. This process is called swapping because the pages are swapped from memory onto the hard disk. You can find the memory management sources in ./linux/mm.<br />
+  <br />
+  <b>Virtual file system</b><br />
+  The virtual file system (VFS) is an interesting aspect of the Linux kernel because it provides a common interface abstraction for file systems. The VFS provides a switching layer between the SCI and the file systems supported by the kernel see below image.<br />
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="http://2.bp.blogspot.com/-Ws7Ka86Z-cE/WBYwr2ByB9I/AAAAAAAAYDc/SFVCPoKhPLYu6lpBEUbuPkS5Fb51I5txQCK4B/s1600/figure4.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="261" src="https://2.bp.blogspot.com/-Ws7Ka86Z-cE/WBYwr2ByB9I/AAAAAAAAYDc/SFVCPoKhPLYu6lpBEUbuPkS5Fb51I5txQCK4B/s320/figure4.jpg" width="320" /></a></div>
+  &nbsp; <br />
+  <h5 class="ibm-h5" id="figure4" style="background-color: white; border: 0px; line-height: 1.625rem; margin: 0px; padding: 0px 0px 15px; text-align: center; vertical-align: baseline;">
+    <span style="color: #323232; font-family: &quot;helvregularibm&quot; , &quot;helvetica neue&quot; , &quot;arial&quot; , sans-serif;"><span style="font-size: 16px; font-weight: normal;">&nbsp;The VFS provides a switching fabric between users and file systems [3]</span></span></h5>
+  The file system sources is locater under ./linux/fs<br />
+  <br />
+  <b>Network stack</b><br />
+  TCP is the sockets layer, which is invoked through the SCI.<br />
+  The sockets layer is the standard API to the networking subsystem and provides a user interface to a variety of networking protocols. From raw frame access to IP protocol data units (PDUs) and up to TCP and the User Datagram Protocol (UDP), the sockets layer provides a standardized way to manage connections and move data between endpoints. The networking sources is located in &nbsp;./linux/net.<br />
+  <br />
+  <b>Device drivers</b><br />
+  The Linux source tree provides a drivers subdirectory that is further divided by the various devices that are supported, such as Bluetooth, I2C, serial, and so on. The device driver sources is located under ./linux/drivers.<br />
+  <br />
+  <b>Architecture-dependent code</b><br />
+  While much of Linux is independent of the architecture on which it runs, there are elements that must consider the architecture for normal operation and for efficiency. The ./linux/arch subdirectory defines the architecture-dependent portion of the kernel source contained in a number of subdirectories that are specific to the architecture (collectively forming the BSP). Each architecture subdirectory contains a number of other subdirectories that focus on a particular aspect of the kernel, such as boot, kernel, memory management, and others.<br />
+  <br />
+  <b>More detailed Ubuntu architecture Architecture:</b><br />
+  <b><br /></b>
+  <br />
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="http://1.bp.blogspot.com/-Ecal7GSeRrc/WBY0cxNd9dI/AAAAAAAAYDo/HjaMoC7KWMcicr0--8X9QpRWyiSmmXVOgCK4B/s1600/ubuntu_architecutre.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="241" src="https://1.bp.blogspot.com/-Ecal7GSeRrc/WBY0cxNd9dI/AAAAAAAAYDo/HjaMoC7KWMcicr0--8X9QpRWyiSmmXVOgCK4B/s400/ubuntu_architecutre.jpg" width="400" /></a></div>
+  <br />
+  <b>&nbsp;System lifecycle:</b><br />
+  <br />
+  The lifecycle of OS from power on to Power off is prity simple and obvious, but that only from initial point of view, so the lifecicle or state machine is:<br />
+  &nbsp; <br />
+  Power On -&gt; Load(from ROM to RAM) -&gt; Bootloader/Bootstrap(load kernel) -&gt; BootPROM/ PROM Monitor/BIOS -&gt; Boot Manager(e.g. GRUB) -&gt; Boot LiLo(Select kernel load configs) -&gt; Kernel Init(start_kernel) -&gt;Os Init(/sbin/init) -&gt;Run(process tree)-&gt;Stop(halt/reboot/poweroff)-&gt;Shutdown(/bin/shutdown inhibit login)-&gt; SIGTERM(send message to all precess for persisting current state) -&gt; SIGKILL(kill process)-&gt;PowerOff<br />
+  <br />
+  If we try to look dipper how state machine for every process is implemented than we can more states and transitions.<br />
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="http://1.bp.blogspot.com/-HsEDEIbTFgc/WBY92BGILMI/AAAAAAAAYD4/MibHt8dYKW41l5aGbY_RJ0hMyC3CSvezQCK4B/s1600/processstate.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="311" src="https://1.bp.blogspot.com/-HsEDEIbTFgc/WBY92BGILMI/AAAAAAAAYD4/MibHt8dYKW41l5aGbY_RJ0hMyC3CSvezQCK4B/s400/processstate.gif" width="400" /></a></div>
+  <div style="text-align: center;">
+    Process state diagram[5]</div>
+  <br />
+  To see entire running system and hierarchy of processes try to run pstree.<br />
+  <br />
+  <b>Tools for&nbsp;</b><b>system&nbsp;</b><b>analyse&nbsp;</b><br />
+  <b><br /></b>
+  To monitor process activity use one of:<b> top/atop/htop/glances/dstat/saidar&nbsp;</b><br />
+  all of them&nbsp;<span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">provides a dynamic real-time view of a running system i.e. actual process activity</span><br />
+  <br />
+  <b>System Activity</b>, Hardware and System Information&nbsp;memory, paging, block IO, traps, and cpu activity:<br />
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># vmstat 1 -a -m&nbsp;</code></div>
+  <div>
+    <b>Who</b>&nbsp;</div>
+  <div>
+    <span style="background-color: transparent;">Find out who is logged on and what they are doing&nbsp;</span><b>w/who</b>&nbsp;command displays information about the users currently on the machine, and their processes.</div>
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># w<br class="Apple-interchange-newline" /># who&nbsp;</code><br />
+  <div>
+    <br /></div>
+  <b>Process management:</b><br />
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">Print all process&nbsp;</span><br />
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps ax<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps axu</code></div>
+  <div>
+    Print Security Information:&nbsp;</div>
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -eo euser,ruser,suser,fuser,f,comm,label<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps axZ<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps -eM</code></div>
+  Print A Process Tree<br />
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -ejH<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps axjf<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># pstree</code></div>
+  <div>
+    <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; line-height: 27px; margin: 0px; padding: 0px; text-align: left; word-wrap: break-word;">
+      <span style="font-weight: normal;">See Every Process Running As User eca</span></div>
+    <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+      <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -U eca -u eca u</code></div>
+    <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; line-height: 27px; margin: 0px; padding: 0px; text-align: left; word-wrap: break-word;">
+      <span style="font-weight: normal;">Set Output In a User-Defined Format</span></div>
+    <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+      <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ps -eopid,tt,user,fname,tmout,f,wchan</code></div>
+  </div>
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">Find Out The Top 10 Memory Consuming Process</span><br />
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -auxf | sort -nr -k 4 | head -10</code></div>
+  <div style="background-color: white; color: #111111; line-height: 27px; margin: 0px; padding: 0px; text-align: left; word-wrap: break-word;">
+    Find Out top 10 CPU Consuming Process</div>
+  <div style="-webkit-text-stroke-width: 0px; background-color: white; color: #111111; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: normal; letter-spacing: normal; margin: 0px 0px 27px; orphans: 2; padding: 0px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># ps -auxf | sort -nr -k 3 | head -10</code></div>
+  <b>Average CPU Load, Disk Activity</b><br />
+  <br />
+  <div style="text-align: left;">
+    <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif;"><span style="font-size: x-small;">The command iostat report Central Processing Unit (CPU) statistics and input/output statistics for devices, partitions and network filesystems (NFS).</span></span></div>
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># iostat</code><br />
+  <div>
+    <br /></div>
+  <div>
+    <b>System activity repport:</b></div>
+  <br />
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">The sar command is used to collect, report, and save system activity information. To see network counter, enter:</span><br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># sar -n DEV | more</code><br />
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">To display the network counters from the 24th:</span><br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># sar -n DEV -f /var/log/sa/sa24 | more</code><br />
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">You can also display real time usage using sar:</span><br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># sar 4 5</code><br />
+  <b><br /></b>
+  <b>Multiprocessor Usage</b><br />
+  The mpstat command displays activities for each available processor, processor 0 being the first one. mpstat -P ALL to display average CPU utilization per processor:<br />
+  <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># mpstat -P ALL</code></div>
+  <div>
+    <b>Process Memory Usage</b></div>
+  The command pmap report memory map of a process. Use this command to find out causes of memory bottlenecks.<br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># pmap -d PID</code><br />
+  <div style="text-align: left;">
+    <span style="background-color: white; color: #111111; font-size: 16px;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span></span>
+    <span style="background-color: white; color: #111111; font-size: 16px;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">To display process memory information for pid # 123 enter:</span></span></div>
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># pmap -d 123</code><br />
+  <div>
+    <br /></div>
+  <div>
+    <div>
+      <b>Network Statistics</b></div>
+    <div>
+      <div style="-webkit-text-stroke-width: 0px; color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+        <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin: 0px 0px 27px; padding: 0px; word-wrap: break-word;">
+          <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># netstat<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># nmap&nbsp;<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># ss -lp</code></div>
+      </div>
+    </div>
+  </div>
+  <b>Real-time Network Statistics</b><br />
+  <div>
+    <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+      <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># iptraf</code></div>
+    <div>
+      <b>Detailed Network Traffic Analysis</b></div>
+    <div>
+      <div style="background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; margin-bottom: 27px; padding: 0px; word-wrap: break-word;">
+        <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;">#&nbsp;tcpdump -i eth1 'udp port 53'</code></div>
+      <div>
+        To display all IPv4 HTTP packets to and from port 80, i.e. print only packets that contain data, not, for example, SYN and FIN packets and ACK-only packets, enter:</div>
+    </div>
+  </div>
+  <div style="-webkit-text-stroke-width: 0px; background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: normal; letter-spacing: normal; margin: 0px 0px 27px; orphans: 2; padding: 0px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># tcpdump 'tcp port 80 and (((ip[2:2] - ((ip[0]&amp;0xf)&lt;<2 -="" amp="" tcp="" xf0="">&gt;2)) != 0)'</2></code></div>
+  <div style="text-align: left;">
+    To display all FTP session to 202.54.1.5, enter:</div>
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># tcpdump -i eth1 'dst 202.54.1.5 and (port 21 or 20'</code><br />
+  To display all HTTP session to 192.168.1.5:<br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># tcpdump -ni eth0 'dst 192.168.1.5 and tcp and port http'</code><br />
+  Use&nbsp;<a href="http://www.cyberciti.biz/faq/linux-unix-bsd-apache-tcpdump-http-packets-sniffing/" style="color: grey; margin: 0px; padding: 0px; text-decoration: underline; word-wrap: break-word;">wireshark to view detailed</a>&nbsp;information about files, enter:<br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># tcpdump -n -i eth1 -s 0 -w output.txt src or dst port 80</code><br />
+  <br />
+  <b>System Calls</b><br />
+  Trace system calls and signals. This is useful for debugging webserver and other server problems. See how to use to trace the process and see What it is doing.<br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"><br class="Apple-interchange-newline" /># &nbsp;strace -v stat</code><br />
+  <br />
+  <b>Kernel Statistics</b><br />
+  /proc file system provides detailed information about various hardware devices and other Linux kernel information. See Linux kernel /proc documentations for further details. Common /proc examples:<br />
+  <div style="-webkit-text-stroke-width: 0px; background-color: white; color: #111111; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: normal; letter-spacing: normal; margin: 0px 0px 27px; orphans: 2; padding: 0px; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; word-wrap: break-word;">
+    <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># cat /proc/cpuinfo<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># cat /proc/meminfo<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># cat /proc/zoneinfo<br style="margin: 0px; padding: 0px; word-wrap: break-word;" /># cat /proc/mounts</code></div>
+  <b>KDE System Guard – Real-time Systems Reporting and Graphing</b><br />
+  KSysguard is a network enabled task and system monitor application for KDE desktop. This tool can be run over ssh session. It provides lots of features such as a client/server architecture that enables monitoring of local and remote hosts.<br />
+  <br />
+  <b>lsof</b> – list open files, network connections and much more.<br />
+  <br />
+  <b>ntop</b> web based tool – ntop is the best tool to see network usage in a way similar to what top command does for processes i.e. it is network traffic monitoring software. You can see network status, protocol wise distribution of traffic for UDP, TCP, DNS, HTTP and other protocols.<br />
+  Conky – Another good monitoring tool for the X Window System. It is highly configurable and is able to monitor many system variables including the status of the CPU, memory, swap space, disk storage, temperatures, processes, network interfaces, battery power, system messages, e-mail inboxes etc.<br />
+  <br />
+  <b>GKrellM</b> – It can be used to monitor the status of CPUs, main memory, hard disks, network interfaces, local and remote mailboxes, and many other things.<br />
+  <br />
+  <b>vnstat</b> – vnStat is a console-based network traffic monitor. It keeps a log of hourly, daily and monthly network traffic for the selected interface(s).<br />
+  <br />
+  <b>mtr</b> – mtr combines the functionality of the traceroute and ping programs in a single network diagnostic tool.<br />
+  <br />
+  <b>Display Bandwidth Usage on Network Interface&nbsp;</b><br />
+  <span style="background-color: white; color: #111111; font-family: &quot;arial&quot; , &quot;helvetica neue&quot; , &quot;helvetica&quot; , sans-serif; font-size: 16px;">Type iftop command at the shell prompt to display traffic:</span><br />
+  <code style="background-color: #fafbfc; border: 1px solid rgb(222, 222, 222); clear: both; color: #666666; display: block; font-family: Consolas, Monaco, Menlo, Courier, Verdana, sans-serif; font-size: 16px; line-height: 1em; margin: 0px; overflow: auto; padding: 21px; word-wrap: normal;"># iftop -i eth0</code><br />
+  <div>
+    <br /></div>
+  <div>
+    <br /></div>
+  <div>
+    <b>File system:</b></div>
+  <div>
+    <div class="separator" style="clear: both; text-align: center;">
+      <a href="http://3.bp.blogspot.com/-_vzwvy1JAUo/WBafs1WL2sI/AAAAAAAAYEU/eE2oYun4J7MKypAYLnmvgKLa_sqJYKYMwCK4B/s1600/linux_file_structure.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="258" src="https://3.bp.blogspot.com/-_vzwvy1JAUo/WBafs1WL2sI/AAAAAAAAYEU/eE2oYun4J7MKypAYLnmvgKLa_sqJYKYMwCK4B/s400/linux_file_structure.jpg" width="400" /></a></div>
+    <br /></div>
+  <div>
+    <b>/bin:&nbsp;</b><br />
+    Contains the executable programs that are part of the Linux operating system.<br />
+    Many Linux commands such as cat, cp, ls, more, and tar are located in /bin.<br />
+    Example ls, cat, cp.<br />
+    <br />
+    <b>/dev:</b><br />
+    All the devices like input devices, sound card, modems are stored.<br />
+    It is a virtual directory that contains devices files.<br />
+    Example : /dev/udp, /dev/urandom, /dev/sda1<br />
+    <br />
+    <b>/etc</b><br />
+    Contains config folder of entire operating system.<br />
+    All the global setting like ssh, telnet, and smtp/pop3 mail servers.<br />
+    Also contains system’s password file like group lists, user skeletons, and cron jobs.<br />
+    Example: /etc/resolv.conf, /etc/logrotate.conf<br />
+    <br />
+    <b>/home</b><br />
+    Default directory for users to store the personal files.<br />
+    Example /home/saugat, /home/sachit<br />
+    <br />
+    <b>/sbin</b><br />
+    Contains binary executables typtically used by system admnistrator only available to root.<br />
+    Mostly used for system maintenance purpose<br />
+    Commands such as mount, shutdown, umount, reside here<br />
+    Example: /sbin/halt/ /sbin/ip6tables<br />
+    <br />
+    <b>/usr</b><br />
+    Contains shareable and read only datacontains binaries, libraries, documentation and source code for second level program<br />
+    /usr/bin : Contains executable files for many Linux commands. It is not part of the core Linux operating system.<br />
+    /usr/include : Contains header files for C and C++ programming languages<br />
+    /usr/lib : Contains libraries for C and C++ programming languages.<br />
+    /usr/local : Contains local files. It has a similar directories as /usr contains.<br />
+    /usr/sbin : Contains administrative commands.<br />
+    /usr/share : Contains files that are shared, like, default configuration files, images, documentation, etc.<br />
+    /usr/src : Contains the source code for the Linux kernel.<br />
+    <br />
+    <b>/var</b><br />
+    Includes user specific files such as mail message, database of installed programs, log files etc.<br />
+    <br />
+    /var/cache: Storage area for cached data for applications.<br />
+    /var/lib: Contains information related to the current state of applications. Programs modify this when they run.<br />
+    /var/lock: Contains lock files which are checked by applications so that a resource can be used by one application only.<br />
+    /var/log: Contains log files for different applications.<br />
+    /var/mail: Contains users emails.<br />
+    /var/opt: Contains variable data for packages stored in /opt directory.<br />
+    /var/run: Contains data describing the system since it was booted.<br />
+    /var/spool: Contains data that is waiting for some kind of processing.<br />
+    /var/tmp: Contains temporary files preserved between system reboots<br />
+    <br />
+    <b>/tmp</b><br />
+    All the temporary files are store here.<br />
+    The files under this directory are deleted when system is rebooted.<br />
+    For example: when new program is installed it use /tmp/ to put files during installation that won’t be<br />
+    needed after the program is installed.<br />
+    <br />
+    <b>/mnt</b><br />
+    Default location for mouting devices like cdrooms, floppy disk dries, USB memory sticks etc.<br />
+    Example : /mnt/cdroom<br />
+    <br />
+    <b>/proc</b><br />
+    contains information about system process<br />
+    virtual file system that contains information about file system.<br />
+    Example /proc/cpuinfo, /proc/swaps<br />
+    <br />
+    <b>/lib</b><br />
+    share libraries are stored(perl, python, C, etc.)<br />
+    /lib/ are also a kernel modules<br />
+    Example: ld-2.11.1.so, libncurses.so.5.7<br />
+    <br />
+    <b>/opt</b><br />
+    Config file for add on Application software are found here.<br />
+    Third party application should be installed in this directory.<br />
+    <br />
+    <b>/root</b><br />
+    Home directory of system administrator.’root’.<br />
+    Root user has write privilege under this directory<br />
+    <br />
+    <b>/boot</b><br />
+    Contains everything required for boot process.<br />
+    Stores data that is used before the kernel begins executing user-mode program.<br />
+    Example: /boot/boot.b, /boot/chain.b, /boot/config-kernel-version</div>
+  <br />
+  <b>References:</b><br />
+  [1]&nbsp;https://en.wikipedia.org/wiki/List_of_Linux_distributions<br />
+  [2]&nbsp;http://www.slideshare.net/quontrasolutionsusa/introduction-to-linux-kernel-by-quontra-solutions<br />
+  [3]&nbsp;https://www.ibm.com/developerworks/library/l-linux-kernel<br />
+  [4]&nbsp;https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate<br />
+  [5]&nbsp;http://www.ksvali.com/wp-content/uploads/2009/09/processstate.gif<br />
+  [6]&nbsp;http://www.cyberciti.biz/tips/linux-resource-utilization-to-detect-system-bottlenecks.html<br />
+  [7]&nbsp;http://www.cyberciti.biz/tips/top-linux-monitoring-tools.html<br />
+  [8]&nbsp;http://www.cyberciti.biz/tips/linux-investigate-sockets-network-connections.html<br />
+  [9]&nbsp;http://www.iptables.info/en/iptables-matches.html<br />
+  [10]&nbsp;https://blog.mypapit.net/upload/files/linux_file_structure.jpg<br />
+  <div>
+    <br /></div>
+</div>
